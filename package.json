@@ -1,0 +1,35 @@
+{
+  "name": "amp-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive workshop for learning Amp AI coding assistant",
+  "workspaces": [
+    "apps/*",
+    "stretch-goals/*"
+  ],
+  "scripts": {
+    "setup-all": "npm install && npm run install-all",
+    "install-all": "npm run install-apps && npm run install-stretch",
+    "install-apps": "for dir in apps/*/; do (cd \"$dir\" && npm install) done",
+    "install-stretch": "for dir in stretch-goals/*/; do (cd \"$dir\" && npm install) done",
+    "reset-all": "./scripts/reset-all.sh",
+    "verify": "./scripts/verify-setup.sh",
+    "clean": "rm -rf node_modules apps/*/node_modules stretch-goals/*/node_modules",
+    "test": "echo \"Run tests in individual workspaces\""
+  },
+  "keywords": [
+    "amp",
+    "workshop",
+    "ai",
+    "coding",
+    "assistant",
+    "tutorial"
+  ],
+  "author": "Amp Workshop Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {}
+}

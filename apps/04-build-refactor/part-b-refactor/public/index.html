@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Legacy Task Manager</h1>
+            <p class="subtitle">A deliberately outdated UI that needs modernization</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Add Task Form -->
+            <div class="add-task-section">
+                <h2>Add New Task</h2>
+                <form id="addTaskForm">
+                    <input type="text" id="taskTitle" placeholder="Task title..." required>
+                    <textarea id="taskDescription" placeholder="Task description..."></textarea>
+                    <select id="taskPriority">
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <input type="text" id="taskAssignee" placeholder="Assigned to...">
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list-section">
+                <h2>Current Tasks</h2>
+                <div id="loadingMessage">Loading tasks...</div>
+                <div id="errorMessage" class="error" style="display: none;"></div>
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+
+            <!-- Task Details Modal -->
+            <div id="taskModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h3>Task Details</h3>
+                    <div id="taskDetails"></div>
+                    <div class="modal-actions">
+                        <button onclick="editTask()">Edit</button>
+                        <button onclick="deleteCurrentTask()" class="delete-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>⚠️ This is legacy code with many issues:</p>
+            <ul>
+                <li>No TypeScript</li>
+                <li>Old-style callbacks</li>
+                <li>Poor error handling</li>
+                <li>No loading states</li>
+                <li>Security vulnerabilities</li>
+            </ul>
+            <p><strong>Your mission:</strong> Use Amp to modernize this entire application!</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

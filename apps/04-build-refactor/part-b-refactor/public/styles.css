@@ -1,0 +1,234 @@
+/* Intentionally outdated CSS - perfect for refactoring! */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subtitle {
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.add-task-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.add-task-section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#addTaskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#addTaskForm input,
+#addTaskForm textarea,
+#addTaskForm select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#addTaskForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addTaskForm button:hover {
+    background-color: #45a049;
+}
+
+.task-list-section h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.task-item h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.task-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.priority {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.priority.low {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.priority.medium {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.priority.high {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-actions button:first-child {
+    background-color: #2196F3;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#loadingMessage {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #666;
+}
+
+footer ul {
+    margin: 10px 0 10px 20px;
+    color: #666;
+}
+
+footer strong {
+    color: #333;
+}
+
+/* Intentionally bad: No responsive design! */
+/* Intentionally bad: No CSS variables! */
+/* Intentionally bad: No modern layout (grid/flexbox used minimally)! */
+/* Intentionally bad: No animations beyond basic transitions! */

@@ -1,0 +1,27 @@
+{
+  "name": "shopmart-legacy",
+  "version": "0.1.0",
+  "description": "A legacy e-commerce site that needs modernization",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000 -o",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:e2e": "echo \"TODO: Add E2E tests with Playwright or Cypress\"",
+    "lint": "echo \"TODO: Add linting\"",
+    "format": "echo \"TODO: Add code formatting\""
+  },
+  "keywords": [
+    "e-commerce",
+    "legacy",
+    "workshop"
+  ],
+  "author": "ShopMart Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

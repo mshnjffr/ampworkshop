@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopMart - Your Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body bgcolor="#CCCCCC">
+    <center>
+        <table width="800" border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <td colspan="2" bgcolor="#000080">
+                    <font color="white" size="6">
+                        <b>🛒 ShopMart - Best Deals Online!</b>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td width="150" valign="top" bgcolor="#FFFFCC">
+                    <b>Categories:</b><br>
+                    <a href="#electronics">Electronics</a><br>
+                    <a href="#clothing">Clothing</a><br>
+                    <a href="#books">Books</a><br>
+                    <a href="#home">Home & Garden</a><br>
+                    <br>
+                    <font color="red">
+                        <marquee>SALE! 50% OFF!</marquee>
+                    </font>
+                </td>
+                <td valign="top" bgcolor="white">
+                    <h2>Featured Products</h2>
+                    <div id="products"></div>
+                    
+                    <hr>
+                    
+                    <h3>Shopping Cart</h3>
+                    <table border="1" width="100%" id="cart-table">
+                        <tr bgcolor="#DDDDDD">
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr>
+                        <tbody id="cart-items"></tbody>
+                        <tr>
+                            <td colspan="3" align="right"><b>Total:</b></td>
+                            <td colspan="2"><b id="cart-total">$0.00</b></td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+                    <input type="button" value="Continue Shopping" onclick="alert('Keep shopping!')">
+                    <input type="button" value="Checkout" onclick="showCheckout()" style="background-color: yellow;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#333333">
+                    <center>
+                        <font color="white" size="2">
+                            Copyright 1999 ShopMart Inc. | Best viewed in Internet Explorer 4.0
+                        </font>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <!-- Checkout Modal (hidden by default) -->
+    <div id="checkout-modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Checkout</h2>
+            <form id="checkout-form" onsubmit="return false;">
+                <table cellpadding="5">
+                    <tr>
+                        <td colspan="2"><b>Billing Information</b></td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input type="text" name="fullname" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td><input type="text" name="phone" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea name="address" rows="3" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td><input type="text" name="city" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td>
+                            <select name="state">
+                                <option value="">Select State</option>
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                                <option value="FL">Florida</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ZIP Code:</td>
+                        <td><input type="text" name="zip" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Payment Information</b></td>
+                    </tr>
+                    <tr>
+                        <td>Card Number:</td>
+                        <td><input type="text" name="cardnumber" size="30"></td>
+                    </tr>
+                    <tr>
+                        <td>Expiry Date:</td>
+                        <td>
+                            <select name="expmonth">
+                                <option value="">Month</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="expyear">
+                                <option value="">Year</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CVV:</td>
+                        <td><input type="text" name="cvv" size="5"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="terms"> I agree to terms and conditions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Cancel" onclick="hideCheckout()">
+                            <input type="button" value="Place Order" onclick="placeOrder()" style="background-color: lime;">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

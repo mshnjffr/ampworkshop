@@ -1,0 +1,19 @@
+{
+  "name": "parallel-processing-challenge",
+  "version": "1.0.0",
+  "description": "CSS to Tailwind migration using Amp's parallel Task agents",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "screenshot:before": "node scripts/screenshot.js before",
+    "screenshot:after": "node scripts/screenshot.js after",
+    "test:visual": "node scripts/compare-screenshots.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  }
+}

@@ -1,0 +1,169 @@
+/* Intentionally outdated CSS for workshop exercise */
+
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: blink;
+}
+
+.product-card {
+    border: 2px solid #000000;
+    background-color: #FFFFEE;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+
+.product-card img {
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+.add-to-cart-btn {
+    background-color: #00FF00;
+    border: 2px outset #00AA00;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-to-cart-btn:active {
+    border: 2px inset #00AA00;
+}
+
+#checkout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border: 3px solid #000080;
+    padding: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea, 
+select {
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+    font-family: "Times New Roman", serif;
+}
+
+input[type="button"] {
+    border: 2px outset #CCCCCC;
+    background-color: #DDDDDD;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    border: 2px inset #CCCCCC;
+}
+
+/* No mobile responsiveness - intentionally bad for workshop */
+@media (max-width: 768px) {
+    /* Empty - participants will add responsive design */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    background-color: yellow;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    background-color: #CCFFCC;
+    padding: 5px;
+    border: 2px solid green;
+}
+
+/* Blink animation for old-school effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+marquee {
+    animation: blink 2s infinite;
+}
+
+/* Bad practice: using IDs for styling */
+#cart-table {
+    background-color: #F0F0F0;
+}
+
+#cart-total {
+    color: green;
+    font-size: 18px;
+}
+
+/* Accessibility issues - no focus styles */
+*:focus {
+    outline: none;
+}
+
+/* Fixed widths - not responsive */
+table {
+    table-layout: fixed;
+}
+
+/* Old-school form styling */
+form table {
+    background-color: #EEEEEE;
+    border: 1px solid #999999;
+}
+
+form table td {
+    padding: 5px;
+}
+
+/* No hover states for better UX */
+.product-card:hover {
+    /* Empty - participants will improve this */
+}
+
+/* Poor contrast ratios */
+.light-text {
+    color: #CCCCCC;
+    background-color: #DDDDDD;
+}
+
+/* No transitions for smooth interactions */
+* {
+    transition: none !important;
+}
