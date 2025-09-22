@@ -41,7 +41,7 @@ amp-workshop/
 
 ## 🎯 Core Exercises
 
-### Exercise 01: Hello Amp (5 min)
+### Exercise 01: Hello Amp
 **Goal:** Get comfortable with Amp basics
 ```bash
 cd apps/01-hello-amp
@@ -49,7 +49,7 @@ npm start  # Visit http://localhost:3000
 ```
 **Task:** Ask Amp to make the app interactive!
 
-### Exercise 02: Broken Todo (10 min)
+### Exercise 02: Broken Todo
 **Goal:** Fix bugs in a React TypeScript app
 ```bash
 cd apps/02-broken-todo
@@ -57,7 +57,7 @@ npm start  # Fix the broken todo app
 npm test   # Make all tests pass
 ```
 
-### Exercise 03: Mystery Codebase (15 min)
+### Exercise 03: Mystery Codebase
 **Goal:** Explore and understand unknown code
 ```bash
 cd apps/03-mystery-codebase
@@ -65,7 +65,7 @@ npm start  # Discover what this API does
 ```
 **Challenge:** Create API documentation without prior knowledge!
 
-### Exercise 04: Build & Refactor (20 min)
+### Exercise 04: Build & Refactor
 **Two Parts:**
 - **Part A:** Build a REST API from scratch
 - **Part B:** Refactor legacy code to modern standards
@@ -74,7 +74,7 @@ cd apps/04-build-refactor/part-b-refactor
 npm start  # Run the legacy app
 ```
 
-### Exercise 05: Test Coverage (15 min)
+### Exercise 05: Test Coverage
 **Goal:** Generate comprehensive tests to reach 80%+ coverage
 ```bash
 cd apps/05-test-coverage
@@ -82,7 +82,7 @@ npm test              # Run tests
 npm run test:coverage # Check coverage (starts at 0%)
 ```
 
-### Exercise 06: Browser Automation (10 min)
+### Exercise 06: Browser Automation
 **Goal:** Automate UI testing with Amp's browser tools
 ```bash
 cd apps/06-automate-ui
@@ -92,7 +92,7 @@ npm start  # Serves on http://localhost:3000
 
 ## 🌟 Stretch Goal
 
-### Parallel Processing (10-15 min)
+### Parallel Processing
 **Goal:** Use multiple Amp agents working in parallel
 ```bash
 cd stretch-goals/parallel-processing
@@ -125,11 +125,10 @@ npm run dev         # Development mode (where available)
 
 ## 🎓 Workshop Flow
 
-**Total Time: 90 minutes**
-- 5 min: Introduction & Setup verification
-- 85 min: Hands-on exercises
-  - Exercises 1-6: 75 minutes
-  - Stretch goal: 10 minutes (if time permits)
+Suggested flow:
+- Introduction & setup verification
+- Hands-on exercises (1–6)
+- Optional stretch goal
 
 ## 📚 Resources
 
