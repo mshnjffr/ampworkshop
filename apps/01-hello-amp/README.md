@@ -99,4 +99,3 @@ If you encounter issues:
 ## Next Steps
 
 Once you're comfortable with this exercise, move on to Exercise 02 where you'll build something more complex!
-

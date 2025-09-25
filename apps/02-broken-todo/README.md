@@ -115,3 +115,6 @@ Choose at least 3 of the missing features and ask Amp to implement them:
 - Ask Amp to add categories or tags for todos
 
 Good luck! This exercise demonstrates Amp's ability to debug, test, and enhance existing applications. 🚀
+
+
+npm run typecheck | amp -x 'fix all typecheck issues' 
